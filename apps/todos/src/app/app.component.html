@@ -1,1 +1,10 @@
-<myorg-nx-welcome></myorg-nx-welcome>
+<div id="welcome">
+  <h1>Welcome todos 👋</h1>
+</div>
+
+<div>
+  <ul>
+    <li *ngFor="let t of todos" class="todo">{{ t.title }}</li>
+  </ul>
+  <button id="add-todo" (click)="addTodo()">Add Todo</button>
+</div>
